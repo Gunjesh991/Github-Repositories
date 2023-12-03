@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #3f4e5c;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  gap: 25px;
+}
+
+.profile-section {
+  width: 350px;
+  max-height: calc(100vh - 120px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.repositories-list {
+  flex: 1;
+}
+
+.profile-section,
+.repositories-list {
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.profile-section img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto;
+}
+
+.profile-section .bio {
+  text-align: center;
+}
+
+.profile-section:hover,
+.repositories-list:hover {
+  transform: scale(1.02);
+}
+
+h2 {
+  color: #0366d6;
+}
+
+p {
+  color: #586069;
+}
+
+a {
+  color: #0366d6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.repository-item {
+  border-bottom: 1px solid #e1e4e8;
+  padding: 10px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.repository-item:hover {
+  background-color: #f5f8fa;
+}
+
+#linkedin-connections {
+  display: inline-block;
+  font-weight: bold;
+  color: #0077b5;
+  transition: color 0.3s ease-in-out;
+}
+
+#linkedin-connections:hover {
+  color: #004471;
+}
